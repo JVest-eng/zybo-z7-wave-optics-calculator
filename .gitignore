@@ -33,5 +33,53 @@
 Thumbs.db
 .DS_Store
 
-# Output XSA
-*.xsa
+
+# --------------------------
+# Vitis Unified IDE
+# --------------------------
+
+# Build and exported products
+/vitis/**/build/
+/vitis/**/export/
+/vitis/**/resources/
+
+# IDE-generated state
+/vitis/**/_ide/
+/vitis/**/.metadata/
+/vitis/**/compile_commands.json
+
+# Generated platform files
+/vitis/**/hw/sdt/
+/vitis/**/bsp/lib/
+
+# Compiled outputs
+/vitis/**/*.elf
+/vitis/**/*.o
+/vitis/**/*.obj
+/vitis/**/*.log
+/vitis/**/*.jou
+/vitis/**/*.wdb
+
+# Vitis 2024.2 generated platform
+/vitis/.rigel_lopper/
+/vitis/platform/
+
+# Application build products and IDE state
+/vitis/main_app/build/
+/vitis/main_app/_ide/
+/vitis/main_app/.metadata/
+
+# Generated application configuration
+/vitis/main_app/src/.clangd
+/vitis/main_app/src/CMakeLists.txt
+/vitis/main_app/src/Empty_applicationExample.cmake
+/vitis/main_app/src/app.yaml
+/vitis/main_app/src/README.txt
+
+# Regenerable linker script (if unmodified)
+/vitis/main_app/src/lscript.ld
+
+# Generated binaries
+*.elf
+*.o
+*.obj
